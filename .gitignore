@@ -1,6 +1,15 @@
 
 # Created by https://www.gitignore.io/api/osx,node,macos,windows,visualstudiocode
 
+db
+build
+*env
+*.env
+.*.env
+.tern*
+whiteboard-solutions/
+
+
 ### macOS ###
 *.DS_Store
 .AppleDouble

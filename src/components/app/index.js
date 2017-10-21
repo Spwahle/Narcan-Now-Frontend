@@ -5,9 +5,6 @@ import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LandingContainer from '../landing-container';
 import {setToken} from '../../actions/auth-actions.js';
-import Header from '../header';
-
-import HostContainer from '../host-container';
 
 class App extends React.Component {
   constructor(props) {
