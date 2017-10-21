@@ -49,8 +49,7 @@ class LandingContainer extends React.Component {
     return (
       <div className='landing-container'>
         <div id='title-container'>
-          <Logo id='logo' />
-          <h1 id='title'>Parkify</h1>
+          <h1 id='title'>Narcan Now</h1>
         </div>
         <AuthForm
           auth={params.auth}
