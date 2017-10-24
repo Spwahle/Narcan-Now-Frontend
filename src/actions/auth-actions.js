@@ -12,7 +12,7 @@ export const logout = () => {
 };
 
 export const signupRequest = (user) => (dispatch) => {
-  return superagent.post(`${__API_URL__}/signup`)
+  return superagent.post(`${__API_URL__}/api/signup`)
   .withCredentials()
   .send(user)
   .then( response => {
@@ -27,7 +27,7 @@ export const signupRequest = (user) => (dispatch) => {
 };
 
 export const loginRequest = (user) => (dispatch) => {
-  return superagent.get(`${__API_URL__}/signin`)
+  return superagent.get(`${__API_URL__}/api/signin`)
   .withCredentials()
   .auth(user.name, user.password)
   .then(response => {

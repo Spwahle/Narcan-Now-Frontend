@@ -11,6 +11,11 @@ import DemoApp from '../google-map';
 import MapWithADirectionsRenderer from '../google-map';
 import {setToken} from '../../actions/auth-actions.js';
 import DashboardContainer from '../dashboard';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui//styles/baseThemes/darkBaseTheme';
+
+const muiTheme = getMuiTheme(darkBaseTheme);
 
 
 class App extends React.Component {
@@ -20,18 +25,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
-        <div className='narcan'>
-          <main>
-            <Route exact path='*' component={Header} />
-            <Route exact path='/' render={() => <Redirect from='/' to='/welcome/login' />} />
-            <Route path='/welcome/:auth' component={LandingContainer} />
-            <Route exact path='/settings' component={SettingsContainer} />
-            <Route exact path='/locations' component={DashboardContainer} />
-          </main>
-        </div>
-      </BrowserRouter>
-
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <BrowserRouter>
+          <div className='narcan'>
+            <main>
+              <Route exact path='*' component={Header} />
+              <Route exact path='/' render={() => <Redirect from='/' to='/welcome/login' />} />
+              <Route path='/welcome/:auth' component={LandingContainer} />
+              <Route exact path='/settings' component={SettingsContainer} />
+              <Route exact path='/locations' component={DashboardContainer} />
+            </main>
+          </div>
+        </BrowserRouter>
+      </MuiThemeProvider>
     );
   }
 }
