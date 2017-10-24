@@ -5,7 +5,7 @@ import * as util from '../../lib/utilities.js';
 import PropTypes from 'prop-types';
 import {fetchUserLocations, createLocationRequest} from '../../actions/location-actions.js';
 import LocationForm from '../location-form';
-import LocationItem from '../location-item';
+// import LocationItem from '../location-item';
 
 class DashboardContainer extends React.Component {
   constructor(props) {
