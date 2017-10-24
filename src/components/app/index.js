@@ -6,6 +6,9 @@ import PropTypes from 'prop-types';
 import SettingsContainer from '../settings-container';
 import LandingContainer from '../landing-container';
 import Header from '../header';
+//import NarcanMap from '../google-map';
+import DemoApp from '../google-map';
+import MapWithADirectionsRenderer from '../google-map';
 import {setToken} from '../../actions/auth-actions.js';
 import DashboardContainer from '../dashboard';
 
@@ -28,6 +31,7 @@ class App extends React.Component {
           </main>
         </div>
       </BrowserRouter>
+
     );
   }
 }
@@ -49,3 +53,10 @@ App.propTypes = {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+// <NarcanMap
+//   containerElement={<div style={{height: '600px'}} />}
+//   mapElement={<div style={{height: '100%'}} />}
+//   googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOTFGuAM5KLro5-_3oNBKzpKYLhcVXZxg&v=3.exp&libraries=geometry,drawing,places"
+//   loadingElement={<div style={{ height: `100%` }} />}
+// />
