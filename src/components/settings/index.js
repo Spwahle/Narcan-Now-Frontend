@@ -3,7 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import * as util from '../../lib/utilities.js';
-import {createCarRequest, fetchCarsRequest} from '../../actions/location-actions.js';
+import {createCarRequest, fetchLocationRequest} from '../../actions/location-actions.js';
 import ProfileForm from '../profile-form';
 // import LocationForm from '../location-form';
 // import LocationItem from '../location-item';
@@ -26,7 +26,7 @@ class SettingsContainer extends React.Component {
           <h3><i className='fa fa-id-card-o'></i> Update your profile</h3>
           <ProfileForm />
 
-          <h3><i className='fa fa-car'></i>Add a home address</h3>
+          <h3>Add a home address</h3>
           <SignUp-Form
             buttonText='Add'
             onComplete={location => {
@@ -38,7 +38,7 @@ class SettingsContainer extends React.Component {
           <div className='location-list'>
             <h3><i className='fa fa-home'></i> Your saved addresses</h3>
             <ul>
-              {this.props.profile.cars.map((location, index) =>
+              {this.props.profile.location.map((location, index) =>
                 <li key={index}>
                   <locationItem location={location} />
                 </li>
@@ -63,7 +63,7 @@ let mapStateToProps = (state) => ({
 
 let mapDispatchToProps = (dispatch) => ({
   createLocation: (location) => dispatch(createCarRequest(location)),
-  fetchLocation: () => dispatch(fetchCarsRequest())
+  fetchLocation: () => dispatch(fetchLocationRequest())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SettingsContainer);

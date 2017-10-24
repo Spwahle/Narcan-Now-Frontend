@@ -26,7 +26,7 @@ export const fetchLocationRequest = () => (dispatch, getState) => {
   return superagent.get(`${__API_URL__}/location`)
   .set('Authorization', `Bearer ${auth}`)
   .then(response => {
-    dispatch(fetchCars(response.body));
+    dispatch(fetchLocation(response.body));
     return response;
   });
 };
@@ -38,7 +38,7 @@ export const createLocationRequest = (location) => (dispatch,getState) => {
   .set('Authorization', `Bearer ${auth}`)
   .send(location)
   .then(response => {
-    dispatch(fetchCarsRequest());
+    dispatch(fetchLocationRequest());
     return response;
   });
 };
