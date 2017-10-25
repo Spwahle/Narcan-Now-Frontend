@@ -1,10 +1,10 @@
 import './_navbar.scss';
-import FontAwesome from 'react-fontawesome';
+// import FontAwesome from 'react-fontawesome';
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link, withRouter} from 'react-router-dom';
 import {setToken} from '../../actions/auth-actions.js';
-import * as util from '../../lib/utilities.js';
+// import * as util from '../../lib/utilities.js';
 import * as authActions from '../../actions/auth-actions.js';
 import {fetchProfileRequest} from '../../actions/profile-actions.js';
 
@@ -32,7 +32,7 @@ class Navbar extends React.Component {
           <i className='fa fa-plus-square'></i> Narcan Needed
         </span></li></Link>
 
-        <Link to='/find Narcan'>
+        <Link to='/Find Narcan'>
           <li>
             <span>
               <i className='fa fa-calendar'></i> Narcan map

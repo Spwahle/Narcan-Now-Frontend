@@ -18,16 +18,21 @@ class LandingContainer extends React.Component {
     this.validateRoute(this.props);
     let header = document.getElementsByTagName('header')[0];
     header.classList.add('hidden');
+    console.log('components didmount landing');
   }
 
   componentWillUnmount() {
     let header = document.getElementsByTagName('header')[0];
     header.classList.remove('hidden');
+    console.log('components mounting landing');
+
   }
 
   validateRoute(props) {
     let {history} = props;
     let token = utilities.readCookie('X-Parkify-Token');
+    console.log('routes validated landing');
+
 
     if (token)
     {
@@ -82,6 +87,7 @@ let mapDispatchToProps = (dispatch) => {
     signup: (user) => dispatch(signupRequest(user)),
     login: (user) => dispatch(loginRequest(user)),
     fetchProfile: () => dispatch(fetchProfileRequest())
+
   };
 };
 

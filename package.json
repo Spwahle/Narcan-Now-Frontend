@@ -2,7 +2,7 @@
   "name": "Narcan-Now",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "server.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack-dev-server --inline --hot",
@@ -42,7 +42,6 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-fontawesome": "^1.6.1",
-
     "react-google-maps": "^9.0.2",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
