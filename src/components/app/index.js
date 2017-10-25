@@ -6,9 +6,8 @@ import PropTypes from 'prop-types';
 import SettingsContainer from '../settings-container';
 import LandingContainer from '../landing-container';
 import Header from '../header';
-//import NarcanMap from '../google-map';
 import DemoApp from '../google-map';
-import MapWithADirectionsRenderer from '../google-map';
+import ConfButton from '../confirm-button';
 import {setToken} from '../../actions/auth-actions.js';
 import DashboardContainer from '../dashboard';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -35,6 +34,8 @@ class App extends React.Component {
               <Route exact path='/settings' component={SettingsContainer} />
               <Route exact path='/locations' component={DashboardContainer} />
             </main>
+            <ConfButton />
+            <DemoApp />
           </div>
         </BrowserRouter>
       </MuiThemeProvider>
