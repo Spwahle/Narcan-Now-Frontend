@@ -25,6 +25,7 @@ class HostLotForm extends React.Component {
     e.preventDefault();
     let location = {...this.state};
     this.props.onComplete(this.state);
+    
   }
 
   render() {

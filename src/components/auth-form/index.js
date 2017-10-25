@@ -1,62 +1,57 @@
-import './_auth-form.scss';
 import React from 'react';
-import * as utilities from '../../lib/utilities.js';
+import * as utils from '../../lib/utilities';
 import PropTypes from 'prop-types';
+import GoogleLogin from 'react-google-login';
 import GoogleOAuth from '../google-oauth';
-import {withRouter} from 'react-router-dom';
+
+
+
+const responseGoogle = (response) => {
+  console.log(response);
+};
+
+
+// import RaisedButton from 'material-ui/RaisedButton';
 
 class AuthForm extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      name: '',
+      username: '',
       password: '',
       email: '',
-      nameError: null,
+      usernameError: null,
       passwordError: null,
       emailError: null,
-      error: null
+      error: null,
     };
-
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.redirectToSignup = this.redirectToSignup.bind(this);
-    this.redirectToLogin = this.redirectToLogin.bind(this);
   }
 
   handleChange(e) {
     let {name, value} = e.target;
-
     this.setState({
       [name]: value,
-      nameError: name === 'name' && !value ? 'username required' : null,
-      passwordError: name === 'password' && !value ? 'password required' : null,
-      emailError: name === 'email' && !value ? 'email required' : null
+      usernameError: name === 'username' && !value ? 'username must have a value' : null,
+      emailError: name === 'email' && !value ? 'email must have a value' : null,
+      passwordError: name === 'password' && !value ? 'password must have a value' : null,
     });
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.onComplete(this.state)
-    .then(() => {
-      this.setState({ name: '', password: '', email: '' });
-      this.props.history.replace('/search');
+    this.props.onComplete({
+      username: this.state.username,
+      password: this.state.password,
+      email: this.state.email,
     })
-    .catch( error => {
+    // .then(() => this.setState({username: '', email: '', password: ''})) // No longer necessary given the redirect to a different view
+    .then(() => this.props.redirect('/'))
+    .catch(error => {
       console.error(error);
       this.setState({error});
     });
-  }
-
-  redirectToSignup(e) {
-    e.preventDefault();
-    this.props.history.push('/welcome/signup');
-  }
-
-  redirectToLogin(e) {
-    e.preventDefault();
-    this.props.history.push('/welcome/login');
   }
 
   render() {
@@ -65,23 +60,33 @@ class AuthForm extends React.Component {
         onSubmit={this.handleSubmit}
         className='auth-form'>
 
-        {utilities.renderIf(this.props.auth === 'signup',
-          <input
-            type='text'
-            name='email'
-            placeholder='Email'
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
+        {utils.renderIf(this.state.usernameError,
+          <span className="tooltip">{this.state.usernameError}</span>
         )}
 
         <input
-          type='text'
-          name='name'
-          placeholder='Username'
-          value={this.state.name}
-          onChange={this.handleChange}
-        />
+          type="text"
+          name="username"
+          placeholder="username"
+          value={this.state.username}
+          onChange={this.handleChange}/>
+
+        {utils.renderIf(this.state.emailError,
+          <span className="tooltip">{this.state.emailError}</span>
+        )}
+
+        {utils.renderIf(this.props.auth === 'signup',
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            value={this.state.email}
+            onChange={this.handleChange} />
+        )}
+
+        {utils.renderIf(this.state.passwordError,
+          <span className="tooltip">{this.state.passwordError}</span>
+        )}
 
         <input
           type='password'
@@ -91,27 +96,28 @@ class AuthForm extends React.Component {
           onChange={this.handleChange}
         />
 
+        <GoogleLogin
+          clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+          buttonText="Login With Google"
+          onSuccess={responseGoogle}
+          onFailure={responseGoogle}
+        />
+
         <button className='start-button' type='submit'>{this.props.auth}</button>
 
-        {utilities.renderIf(this.props.auth === 'login',
+        {utils.renderIf(this.props.auth === 'login',
           <button className='sign-up-button' onClick={this.redirectToSignup}>New user? Sign up here.</button>
         )}
 
-        {utilities.renderIf(this.props.auth === 'signup',
+        {utils.renderIf(this.props.auth === 'signup',
           <button className='sign-up-button' onClick={this.redirectToLogin}>Returning user? Log in here.</button>
         )}
         <div className='separator'></div>
 
-        <GoogleOAuth />
+
       </form>
     );
   }
 }
 
-AuthForm.propTypes = {
-  auth: PropTypes.string,
-  onComplete: PropTypes.func,
-  history: PropTypes.object
-};
-
-export default withRouter(AuthForm);
+export default AuthForm;
