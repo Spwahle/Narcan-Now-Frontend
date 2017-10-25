@@ -1,0 +1,124 @@
+body {
+  font-family: $font-primary;
+  background: $secondary;
+}
+
+main {
+  //margin-top: 5vw;
+  padding: $gutter-sm;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+button {
+  border: none;
+  color: $white;
+  background: $black;
+  padding: $gutter-sm / 2;
+  margin: ($gutter-sm / 3) 1vw ($gutter-sm / 3) 0;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: 1vw;
+  transition: $transition-primary;
+
+  &:hover {
+    background: $btn-secondary;
+  }
+
+  &.remove {
+    background: none;
+    color: red;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    right: 0;
+    font-size: 2.5vw;
+  }
+}
+
+input[type="text"] {
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  padding: $gutter-sm;
+  width: 25%;
+  font-size: 2vw;
+  margin-bottom: $gutter-sm;
+  margin-right: 1vw;
+  border: none;
+  transition: $transition-primary;
+
+  &:focus {
+    background: #444;
+    color: $white;
+  }
+}
+
+input[type="number"] {
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  padding: $gutter-sm;
+  width: 25%;
+  font-size: 2vw;
+  margin-bottom: $gutter-sm;
+  border: none;
+  transition: $transition-primary;
+
+  &:focus {
+    background: #444;
+    color: $white;
+  }
+}
+
+input[type="password"] {
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  padding: $gutter-sm;
+  width: 25%;
+  font-size: 2vw;
+  margin-bottom: $gutter-sm;
+  border: none;
+  transition: $transition-primary;
+
+  &:focus {
+    background: #444;
+    color: $white;
+  }
+}
+
+input[type="email"] {
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  padding: $gutter-sm;
+  width: 25%;
+  font-size: 2vw;
+  margin-bottom: $gutter-sm;
+  border: none;
+  transition: $transition-primary;
+
+  &:focus {
+    background: #444;
+    color: $white;
+  }
+}
+
+h1 {
+  font-size: 3vw;
+  text-decoration: underline;
+  margin-bottom: $gutter-sm;
+}
+
+h2 {
+  font-size: 2vw;
+  text-decoration: underline;
+  margin-bottom: $gutter-sm;
+}
+
+h3 {
+  font-size: 1vw;
+  text-decoration: underline;
+  margin-bottom: $gutter-sm;
+}
