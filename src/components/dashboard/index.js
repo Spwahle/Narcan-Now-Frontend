@@ -35,7 +35,7 @@ class DashboardContainer extends React.Component {
           <ul>
             {this.props.location.map((location, index) =>
               <li className='location-li'key={index}>
-                <LocationItem lot={location} />
+                // <LocationItem lot={location} />
               </li>
             )}
           </ul>
