@@ -75,7 +75,9 @@ Shaun is finishing Full-Stack Javascript Certificate at the Code Fellows Dev Boo
 Madeline grew up in Seattle. She moved to Dallas, Texas for a journalism internship and ended up staying there for four years. After gaining skills in storytelling, photojournalism and videography she applied to work at Apple retail the day after Steve Jobs passed. She started working as a technician but soon became a trainer, working with other people and their creative projects, facilitating workshops and kids field trips. Now that she is back home she wants to help improve software for people with accessibility needs and continue to expose more kids to coding.
 [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/madelinerosestevens/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/madhubs)
 
-* Tim Turner  [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/timothyt/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/ratiphi)
+* Tim Turner
+Tim is a software developer in training with a background in Information Technology and weather forecasting. He enjoys the outdoors, playing with his dog, and spending time with his fiancée.
+ [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/timothyt/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/ratiphi)
 
 ### Table of Contents:
 + [Flowchart](#flowchart)
