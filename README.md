@@ -1,20 +1,34 @@
 ### Narcan-Now
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-### Project description
-Using node.js, HTTP, Express, MongoDB, and Mongoose we have created a Server that responds to different GET, POST, PUT, and DELETE responses from a developer, backend position. The requests to our live server can interact with a remote Database created through Mlabs. In this example we use two schemas- Users and APIs. There are two types of Users, SuperUser and User. Only the SuperUser can POST, PUT, and DELETE. This project represents what is possible with a few simple tools.
+### Project description:
+We found the following challenge on [![challenge.gov](https://www.challenge.gov/challenge/the-2016-fda-naloxone-app-competition/)], the hub for listing challenge and prize competitions, all of which are run by more than 100 agencies across federal government. These problem-solving events include idea, creative, technical and scientific competitions in which U.S. federal agencies invite the public’s help to solve perplexing mission-centric problems.
 
-### About the Team
+#### Our challenge description:
+Design an App that helps solve the problem we face when getting Naloxone to the people who need it, people who need the antidote to reverse a drug overdose.
+
+So we created this mobile first web application to help with that problem.
+
+#### Tools we used:
+ Node.js, Express, MongoDB, and Mongoose, oAuth, Twilio API, Google maps API.
+
+
+### Meet the Team:
 * Shaun Wahle
-[![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/isaiahgwalker/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/Lonewalker72)
+[![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/shaun-wahle/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/Spwahle)
 
 * Madeline Stevens
 [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/madelinerosestevens/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/madhubs)
 
-* Gavin Thomas [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/gavinthomas1192/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/GavinThomas1192)
+* Tim Turner  [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/timothyt/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/ratiphi)
 
-### Table of Contents
+### Table of Contents:
 + [Flowchart](#flowchart)
 + [Installation](#installation)
 + [Routes](#routes)
 + [Resources](#resources)
+
+
+### Installation
+
+### Resources
