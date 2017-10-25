@@ -1,6 +1,15 @@
 import React from 'react';
 import * as utils from '../../lib/utilities';
 import PropTypes from 'prop-types';
+import GoogleLogin from 'react-google-login';
+import GoogleOAuth from '../google-oauth';
+
+
+
+const responseGoogle = (response) => {
+  console.log(response);
+};
+
 
 // import RaisedButton from 'material-ui/RaisedButton';
 
@@ -49,7 +58,7 @@ class AuthForm extends React.Component {
     return (
       <form
         onSubmit={this.handleSubmit}
-        className="auth-form">
+        className='auth-form'>
 
         {utils.renderIf(this.state.usernameError,
           <span className="tooltip">{this.state.usernameError}</span>
@@ -80,11 +89,19 @@ class AuthForm extends React.Component {
         )}
 
         <input
-          type="password"
-          name="password"
-          placeholder="password"
+          type='password'
+          name='password'
+          placeholder='Password'
           value={this.state.password}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+        />
+
+        <GoogleLogin
+          clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+          buttonText="Login With Google"
+          onSuccess={responseGoogle}
+          onFailure={responseGoogle}
+        />
 
         <button className='start-button' type='submit'>{this.props.auth}</button>
 
@@ -97,48 +114,10 @@ class AuthForm extends React.Component {
         )}
         <div className='separator'></div>
 
+
       </form>
     );
   }
-
-
-//   render() {
-//   return (
-//     <form
-//       onSubmit={this.handleSubmit}
-//       className='auth-form'>
-//
-//       {utilities.renderIf(this.props.auth === 'signup',
-//         <input
-//           type='text'
-//           name='email'
-//           placeholder='Email'
-//           value={this.state.email}
-//           onChange={this.handleChange}
-//         />
-//       )}
-//
-//       <input
-//         type='text'
-//         name='name'
-//         placeholder='Username'
-//         value={this.state.name}
-//         onChange={this.handleChange}
-//       />
-//
-//       <input
-//         type='password'
-//         name='password'
-//         placeholder='Password'
-//         value={this.state.password}
-//         onChange={this.handleChange}
-//       />
-//
-//
-//       <GoogleOAuth />
-//     </form>
-//   );
-// }
 }
 
 export default AuthForm;

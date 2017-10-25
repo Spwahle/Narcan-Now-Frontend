@@ -25,17 +25,17 @@ class Navbar extends React.Component {
     return (
       <ul>
         <Link to='/search'><li><span>
-          <i className='fa fa-search'></i> Search
+          Search
         </span></li></Link>
 
-        <Link to='/Narcan Needed'><li><span>
-          <i className='fa fa-plus-square'></i> Narcan Needed
+        <Link to='/google-map'><li><span>
+         Narcan Needed
         </span></li></Link>
 
-        <Link to='/Find Narcan'>
+        <Link to='/learn-narcan'>
           <li>
             <span>
-              <i className='fa fa-calendar'></i> Narcan map
+             Learn More
             </span>
           </li>
         </Link>
