@@ -29,7 +29,7 @@ class DashboardContainer extends React.Component {
             <h4>Find Emergency Narcan Now!</h4>
             <ConfirmButton icon={<Delete />}
               confirmMessage="Delete"
-              onSubmit={() => this.props.deleteModel()} />
+              onSubmit={() => console.log('you clicked confirm')} />
             <LocationForm
               buttonText='Add a new Location'
               onComplete={(location) => {
