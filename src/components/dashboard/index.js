@@ -5,6 +5,9 @@ import * as util from '../../lib/utilities.js';
 import PropTypes from 'prop-types';
 import {fetchUserLocations, createLocationRequest} from '../../actions/location-actions.js';
 import LocationForm from '../location-form';
+import ConfirmButton from 'material-ui-confirm-button';
+import Delete from 'material-ui/svg-icons/action/delete';
+
 // import LocationItem from '../location-item';
 
 class DashboardContainer extends React.Component {
@@ -24,6 +27,9 @@ class DashboardContainer extends React.Component {
           <div className='host-content'>
             <h2><i className='fa fa-plus-square'></i> Locations</h2>
             <h4>Find Emergency Narcan Now!</h4>
+            <ConfirmButton icon={<Delete />}
+              confirmMessage="Delete"
+              onSubmit={() => console.log('you clicked confirm')} />
             <LocationForm
               buttonText='Add a new Location'
               onComplete={(location) => {
