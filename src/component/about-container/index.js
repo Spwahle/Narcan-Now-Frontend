@@ -1,5 +1,5 @@
 import React from 'react';
-import * as utils from '../../lib/utilities';
+import * as utils from '../../lib/utils';
 import {connect} from 'react-redux';
 
 class FactList extends React.Component {

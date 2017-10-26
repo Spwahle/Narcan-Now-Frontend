@@ -1,10 +1,12 @@
 import React from 'react';
-import Navbar from '../navbar';
+import Navbar from '../navbar0';
 import {connect} from 'react-redux';
 import * as utils from '../../lib/utils';
 import {tokenSet} from '../../action/auth-actions';
 import LandingContainer from '../landing-container';
 import DashboardContainer from '../dashboard-container';
+import DirectionsContainer from '../directions-container';
+import AboutContainer from '../about-container';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 import SettingsContainer from '../settings-container';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -25,11 +27,14 @@ class App extends React.Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className="application">
           <AppBar title="Narcan Now!"/>
+          <h1>hi im the app</h1>
           <BrowserRouter>
             <div>
               <Navbar />
               <Route path="/welcome/:auth" component={LandingContainer}/>
               <Route exact path="/settings" component={() => this.props.auth ? <SettingsContainer/> : <Redirect to="/" />}/>
+              <Route exact path='/learn-narcan' component={() => this.props.auth ? <AboutContainer/> : <Redirect to ="/" />}/>
+              <Route exact path='/directions' component={() => this.props.auth ? <DirectionsContainer/> : <Redirect to ="/" />}/>
               <Route exact path="/" component={() => this.props.auth ? <DashboardContainer/> : <Redirect to="/" />}/>
             </div>
           </BrowserRouter>

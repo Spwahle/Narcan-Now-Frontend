@@ -1,12 +1,12 @@
-import './_navbar.scss';
+// import './_navbar.scss';
 // import FontAwesome from 'react-fontawesome';
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link, withRouter} from 'react-router-dom';
-import {setToken} from '../../actions/auth-actions.js';
+// import {setToken} from '../../actions/auth-actions.js';
 // import * as util from '../../lib/utilities.js';
-import * as authActions from '../../actions/auth-actions.js';
-import {fetchProfileRequest} from '../../actions/profile-actions.js';
+// import * as authActions from '../../actions/auth-actions.js';
+// import {fetchProfileRequest} from '../../actions/profile-actions.js';
 
 import PropTypes from 'prop-types';
 
@@ -67,9 +67,9 @@ let mapStateToProps = (state) => ({
 });
 
 let mapDispatchToProps = (dispatch) => ({
-  logout: () => dispatch(authActions.logout()),
-  setToken: (token) => dispatch(setToken(token)),
-  fetchProfile: () => dispatch(fetchProfileRequest()),
+  // logout: () => dispatch(authActions.logout()),
+  // setToken: (token) => dispatch(setToken(token)),
+  // fetchProfile: () => dispatch(fetchProfileRequest()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Navbar));
