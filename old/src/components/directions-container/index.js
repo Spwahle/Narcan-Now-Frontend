@@ -1,8 +1,8 @@
 import React from 'react';
-import * as utils from '../../lib/utils';
+import * as utils from '../../lib/utilities';
 import {connect} from 'react-redux';
 
-class DirectionContainer extends React.Component {
+class DirectionList extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -25,7 +25,7 @@ class DirectionContainer extends React.Component {
                     Hold the NARCAN Nasal Spray with your thumb on the bottom of the plunger
                     and your first and middle fingers on either side of the nozzle.
                     Gently insert the tip of the nozzle into either nostril.</li>
-          <li><h1>3. Give Narcan nasal spray</h1> Tilt the person’s head back and provide support under the neck with your
+          <li><h1> Give Narcan nasal spray</h1> Tilt the person’s head back and provide support under the neck with your
                     hand. Gently insert the tip of the nozzle into one nostril, until your fingers on
                     either side of the nozzle are against the bottom of the person’s nose.
                     Press the plunger firmly to give the dose of NARCAN Nasal Spray.
@@ -53,4 +53,4 @@ let mapDispatchToProps = dispatch => ({
 
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(DirectionContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(DirectionList);
