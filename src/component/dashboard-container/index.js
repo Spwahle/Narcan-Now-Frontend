@@ -1,12 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import './_dashboard-container.scss'
+import './_dashboard-container.scss';
 import * as utils from '../../lib/utils';
 import PhotoForm from '../photo-form';
 import PhotoItem from '../photo-item';
 import {profileFetchRequest} from '../../action/profile-actions';
 import {photoCreateRequest, photosFetchRequest} from '../../action/photo-actions';
-//import ConfButton from '../confirm-button';
 import MapWithRoute from '../map-with-route';
 import MapWithMarkers from '../map-with-markers';
 import ConfirmButton from 'material-ui-confirm-button';
@@ -15,6 +14,7 @@ class DashboardContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      alert: false,
       userLat: 47.260058,
       userLong: -122.455404,
     };
@@ -22,7 +22,12 @@ class DashboardContainer extends React.Component {
     //   {...this.props.photo, preview: ''} :
     //   {description: '', preview: '', photo: null};
 
+    this.toggleAlert = this.toggleAlert.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  toggleAlert() {
+    this.setState({alert: !this.state.alert});
   }
 
   componentWillMount() {
@@ -36,6 +41,7 @@ class DashboardContainer extends React.Component {
     //let userLat, userLong;
     navigator.geolocation.getCurrentPosition((position) => {
       this.setState({userLat: position.coords.latitude, userLong: position.coords.longitude});
+      this.toggleAlert();
       // userLat = position.coords.latitude;
       // userLong = position.coords.longitude;
       // console.log('lat:', userLat, 'long:', userLong);
@@ -59,11 +65,15 @@ class DashboardContainer extends React.Component {
             label="Narcan Needed!"
             confirmMessage="Confirm"
             onSubmit={this.handleSubmit} />
-          <MapWithRoute
-            userLat={this.state.userLat}
-            userLong={this.state.userLong}
-          />
-          <MapWithMarkers />
+          {utils.renderIf(this.state.alert,
+            <MapWithRoute
+              userLat={this.state.userLat}
+              userLong={this.state.userLong}
+            />
+          )}
+          {utils.renderIf(!this.state.alert,
+            <MapWithMarkers />
+          )}
         </div>
       </div>
     );

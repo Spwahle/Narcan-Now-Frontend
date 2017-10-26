@@ -4,7 +4,6 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker, DirectionsRenderer } fr
 import MarkerClusterer from 'react-google-maps/lib/components/addons/MarkerClusterer';
 import { compose, withProps, lifecycle } from 'recompose';
 import fetch from 'isomorphic-fetch';
-const narcanLocation = JSON.parse('{"_id": "1234567890","name": "Business Name","address": "Street Address","coordinates": "lat: 47.606, lng: -122.332"}');
 
 const MapWithAMarkerClustererAndDirectionsRenderer = compose(
   withProps({
@@ -51,7 +50,7 @@ const MapWithAMarkerClustererAndDirectionsRenderer = compose(
           key={marker._id}
           position={{ lat: marker.lat, lng: marker.lng }}
           icon={{
-            url: 'http://christensenheating.com/wp-content/uploads/2015/08/Appleton-WI-Furnace-Service-and-Repair-Christensen-Heating-and-Cooling.png',
+            url: marker.icon,
           }}
         />
       ))}
@@ -72,7 +71,7 @@ class MapWithRoute extends React.PureComponent {
 
   componentDidMount() {
     console.log('__map-with-route_PROPS__', this.props);
-    const url = ['https://gist.githubusercontent.com/ratiphi/596fe4d088b6e2ce48087eb10e9b9ab1/raw/50eea75be191bd62a8370b49611341ef5a96145c/data.json'];
+    const url = ['https://gist.githubusercontent.com/ratiphi/596fe4d088b6e2ce48087eb10e9b9ab1/raw/584b7d01d0b4e116fa22430cc752a31d9db16554/data.json'];
 
     fetch(url)
       .then(res => res.json())
