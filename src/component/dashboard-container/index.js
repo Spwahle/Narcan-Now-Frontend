@@ -5,6 +5,10 @@ import PhotoForm from '../photo-form';
 import PhotoItem from '../photo-item';
 import {profileFetchRequest} from '../../action/profile-actions';
 import {photoCreateRequest, photosFetchRequest} from '../../action/photo-actions';
+//import ConfButton from '../confirm-button';
+import MapWithRoute from '../map-with-route';
+import MapWithMarkers from '../map-with-markers';
+import ConfirmButton from 'material-ui-confirm-button';
 
 class DashboardContainer extends React.Component {
   componentWillMount() {
@@ -15,13 +19,14 @@ class DashboardContainer extends React.Component {
   render() {
     return (
       <div className='dashboard-container'>
-        <h2>Hello from the Dashboard!</h2>
-        <h3>Upload an image to add to the page.</h3>
-        <PhotoForm
-          buttonText="create"
-          onComplete={this.props.photoCreate}/>
+        <h2>Narcan Now! Click button to trigger Narcan alert!</h2>
+        <ConfirmButton
+          label="Narcan Needed!"
+          confirmMessage="Confirm"
+          onSubmit={() => console.log('you clicked confirm')} />
+        <MapWithRoute />
+        <MapWithMarkers />
 
-        {this.props.photos.map(photo => <PhotoItem key={photo._id} photo={photo}/>)}
       </div>
     );
   }

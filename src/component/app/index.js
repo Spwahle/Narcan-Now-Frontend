@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className="application">
-          <AppBar title="Photo App"/>
+          <AppBar title="Narcan Now!"/>
           <BrowserRouter>
             <div>
               <Navbar />
