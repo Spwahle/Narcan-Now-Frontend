@@ -33,7 +33,7 @@ const MapWithAMarkerClustererAndDirectionsRenderer = compose(
           console.error(`error fetching directions ${result}`);
         }
       });
-    }
+    },
   })
 )(props =>
   <GoogleMap
@@ -50,6 +50,9 @@ const MapWithAMarkerClustererAndDirectionsRenderer = compose(
         <Marker
           key={marker._id}
           position={{ lat: marker.lat, lng: marker.lng }}
+          icon={{
+            url: 'fire-pin.svg',
+          }}
         />
       ))}
     </MarkerClusterer>
