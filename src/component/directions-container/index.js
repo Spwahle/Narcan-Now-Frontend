@@ -12,7 +12,7 @@ class DirectionContainer extends React.Component {
 
   render () {
     return (
-      <div className='directionlist'>
+      <div className='directions-container'>
         <ul>
           <li> <h1>1. Identify opioid overdose and check for response</h1> Ask person if he or she is okay and shout name.
                     Shake shoulders and firmly rub the middle of their chest.

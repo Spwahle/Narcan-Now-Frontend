@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import './_dashboard-container.scss'
 import * as utils from '../../lib/utils';
 import PhotoForm from '../photo-form';
 import PhotoItem from '../photo-item';
@@ -51,18 +52,19 @@ class DashboardContainer extends React.Component {
   render() {
     return (
       <div className='dashboard-container'>
-        <h1>hi im the dashboard!</h1>
-        <h2>Narcan Now! Click button to trigger Narcan alert!</h2>
-        <ConfirmButton
-          label="Narcan Needed!"
-          confirmMessage="Confirm"
-          onSubmit={this.handleSubmit} />
-        <MapWithRoute
-          userLat={this.state.userLat}
-          userLong={this.state.userLong}
-        />
-        <MapWithMarkers />
-
+        <div className='host-content'>
+          <h1>hi im the dashboard</h1>
+          <h2>Narcan Now! Click button to trigger Narcan alert!</h2>
+          <ConfirmButton
+            label="Narcan Needed!"
+            confirmMessage="Confirm"
+            onSubmit={this.handleSubmit} />
+          <MapWithRoute
+            userLat={this.state.userLat}
+            userLong={this.state.userLong}
+          />
+          <MapWithMarkers />
+        </div>
       </div>
     );
   }

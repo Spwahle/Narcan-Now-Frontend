@@ -1,3 +1,5 @@
+import './_settings-container.scss';
+
 import React from 'react';
 import {connect} from 'react-redux';
 import * as utils from '../../lib/utils';

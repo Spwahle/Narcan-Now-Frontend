@@ -1,3 +1,4 @@
+import './_app.scss';
 import React from 'react';
 import Navbar from '../navbar';
 import {connect} from 'react-redux';
@@ -26,18 +27,21 @@ class App extends React.Component {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className="application">
-          <AppBar title="Narcan Now!"/>
-          <h1>hi im the app</h1>
-          <BrowserRouter>
-            <div>
-              <Navbar />
-              <Route path="/welcome/:auth" component={LandingContainer}/>
-              <Route exact path="/settings" component={() => this.props.auth ? <SettingsContainer/> : <Redirect to="/" />}/>
-              <Route exact path='/learn-narcan' component={() => this.props.auth ? <AboutContainer/> : <Redirect to ="/" />}/>
-              <Route exact path='/give-narcan' component={() => this.props.auth ? <DirectionsContainer/> : <Redirect to ="/" />}/>
-              <Route exact path="/" component={() => this.props.auth ? <DashboardContainer/> : <Redirect to="/" />}/>
-            </div>
-          </BrowserRouter>
+          <div className='narcan'>
+
+            <AppBar title="Narcan Now!"/>
+            <h1>hi im the app</h1>
+            <BrowserRouter>
+              <div>
+                <Navbar />
+                <Route path="/welcome/:auth" component={LandingContainer}/>
+                <Route exact path="/settings" component={() => this.props.auth ? <SettingsContainer/> : <Redirect to="/" />}/>
+                <Route exact path='/learn-narcan' component={() => this.props.auth ? <AboutContainer/> : <Redirect to ="/" />}/>
+                <Route exact path='/give-narcan' component={() => this.props.auth ? <DirectionsContainer/> : <Redirect to ="/" />}/>
+                <Route exact path="/" component={() => this.props.auth ? <DashboardContainer/> : <Redirect to="/" />}/>
+              </div>
+            </BrowserRouter>
+          </div>
         </div>
       </MuiThemeProvider>
 
