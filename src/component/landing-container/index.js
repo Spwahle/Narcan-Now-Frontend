@@ -1,3 +1,4 @@
+import './_landing-container.scss';
 import React from 'react';
 import AuthForm from '../auth-form';
 import {connect} from 'react-redux';
@@ -15,11 +16,13 @@ class LandingContainer extends React.Component {
 
     return (
       <div>
-        <h2>Hello from the landing page!</h2>
-        <AuthForm
-          auth={params.auth}
-          redirect={redirect}
-          onComplete={handleComplete}/>
+        <div className="login-image">
+          <h2>Hello from the landing page!</h2>
+          <AuthForm
+            auth={params.auth}
+            redirect={redirect}
+            onComplete={handleComplete}/>
+        </div>
       </div>
     );
   }

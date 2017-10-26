@@ -20,6 +20,8 @@ class Navbar extends React.Component {
             {this.props.auth ?
               <div>
                 <li onClick={this.props.tokenDelete}><Link to="/">Logout</Link></li>
+                <li><Link to="/learn-narcan">Learn About Narcan</Link></li>
+                <li><Link to="/give-narcan">How to Give Narcan</Link></li>
                 <li><Link to="/settings">Settings</Link></li>
                 <li><Link to="/">Dashboard</Link></li>
               </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import * as utils from '../../lib/utilities';
+import * as utils from '../../lib/utils';
 import {connect} from 'react-redux';
 
 class FactList extends React.Component {
@@ -12,7 +12,7 @@ class FactList extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="about-container">
         <ul>
           <li> 1. Opioid drugs can slow or stop a person’s breathing, leading to death. Opioids include illegal drugs like heroin, but also prescription medications such as morphine, codeine and hydrocodone, which doctors often prescribe to treat pain. Anyone who uses opioids for long-term management of cancer or non-cancer pain is also at risk for opioid overdose, not just those who use street drugs like heroin.</li>
           <li> 2. You can now purchase the opiate overdose antidote drug naloxone, which restores breathing, at California pharmacies without a prescription. Emergency room doctors and first responders have used naloxone for years to restore breathing in someone who has overdosed on an opiate. </li>
