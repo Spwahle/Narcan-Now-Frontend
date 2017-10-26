@@ -11,9 +11,41 @@ import MapWithMarkers from '../map-with-markers';
 import ConfirmButton from 'material-ui-confirm-button';
 
 class DashboardContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userLat: null,
+      userLong: null,
+    };
+    // this.state = this.props.photo ?
+    //   {...this.props.photo, preview: ''} :
+    //   {description: '', preview: '', photo: null};
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
   componentWillMount() {
     if(!this.props.photos.length) this.props.photosFetch();
     if (!this.props.profile) this.props.profileFetch();
+  }
+
+  handleSubmit() {
+    //e.preventDefault();
+    console.log('you clicked confirm');
+    //let userLat, userLong;
+    navigator.geolocation.getCurrentPosition((position) => {
+      this.setState({userLat: position.coords.latitude, userLong: position.coords.longitude});
+      // userLat = position.coords.latitude;
+      // userLong = position.coords.longitude;
+      // console.log('lat:', userLat, 'long:', userLong);
+      // console.log(position);
+      // return position;
+    });
+    //console.log(userLoc);
+    console.log('lat:', this.state.userLat, 'long:', this.state.userLong);
+    // this.props.onComplete(this.state)
+    //   .then(() => this.setState({description: '', preview: '', photo: null}))
+    //   .then(() => this.props.toggle ? this.props.toggle() : undefined);
   }
 
   render() {
@@ -23,7 +55,7 @@ class DashboardContainer extends React.Component {
         <ConfirmButton
           label="Narcan Needed!"
           confirmMessage="Confirm"
-          onSubmit={() => console.log('you clicked confirm')} />
+          onSubmit={this.handleSubmit} />
         <MapWithRoute />
         <MapWithMarkers />
 
@@ -35,6 +67,8 @@ class DashboardContainer extends React.Component {
 let mapStateToProps = state => ({
   profile: state.profile,
   photos: state.photos,
+  userLat: state.userLat,
+  userLong: state.userLong,
 });
 
 let mapDispatchToProps = dispatch => ({

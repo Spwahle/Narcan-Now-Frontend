@@ -71,6 +71,8 @@ class MapWithRoute extends React.PureComponent {
   }
 
   render() {
+    // let {userLat} = this.props;
+    // let {userLong} = this.props;
     return (
       <div>
         <MapWithAMarkerClustererAndDirectionsRenderer markers={this.state.markers} />
