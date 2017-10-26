@@ -20,7 +20,8 @@ const MapWithAMarkerClustererAndDirectionsRenderer = compose(
       const DirectionsService = new google.maps.DirectionsService();
 
       DirectionsService.route({
-        origin: new google.maps.LatLng(47.618220, -122.351865),
+        //origin: new google.maps.LatLng(47.618220, -122.351865),
+        origin: new google.maps.LatLng(this.props.userLat, this.props.userLong),
         destination: new google.maps.LatLng(47.616071, -122.344704),
         travelMode: google.maps.TravelMode.WALKING,
       }, (result, status) => {
@@ -56,11 +57,18 @@ const MapWithAMarkerClustererAndDirectionsRenderer = compose(
 );
 
 class MapWithRoute extends React.PureComponent {
+  constructor(props) {
+    super(props);
+
+  }
   componentWillMount() {
     this.setState({ markers: [] });
+    // let {userLat} = this.props;
+    // let {userLong} = this.props;
   }
 
   componentDidMount() {
+    console.log('__map-with-route_PROPS__', this.props);
     const url = ['https://gist.githubusercontent.com/ratiphi/596fe4d088b6e2ce48087eb10e9b9ab1/raw/6feca2a9b806a85528c1eeb2c92a20468ff32f83/data.json'];
 
     fetch(url)
@@ -71,11 +79,9 @@ class MapWithRoute extends React.PureComponent {
   }
 
   render() {
-    // let {userLat} = this.props;
-    // let {userLong} = this.props;
     return (
       <div>
-        <MapWithAMarkerClustererAndDirectionsRenderer markers={this.state.markers} />
+        <MapWithAMarkerClustererAndDirectionsRenderer markers={this.state.markers} userLat={this.props.userLat} userLong={this.props.userLong}/>
       </div>
     );
   }

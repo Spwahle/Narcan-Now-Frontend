@@ -14,8 +14,8 @@ class DashboardContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      userLat: null,
-      userLong: null,
+      userLat: 47.260058,
+      userLong: -122.455404,
     };
     // this.state = this.props.photo ?
     //   {...this.props.photo, preview: ''} :
@@ -56,7 +56,10 @@ class DashboardContainer extends React.Component {
           label="Narcan Needed!"
           confirmMessage="Confirm"
           onSubmit={this.handleSubmit} />
-        <MapWithRoute />
+        <MapWithRoute
+          userLat={this.state.userLat}
+          userLong={this.state.userLong}
+        />
         <MapWithMarkers />
 
       </div>
@@ -67,8 +70,6 @@ class DashboardContainer extends React.Component {
 let mapStateToProps = state => ({
   profile: state.profile,
   photos: state.photos,
-  userLat: state.userLat,
-  userLong: state.userLong,
 });
 
 let mapDispatchToProps = dispatch => ({
