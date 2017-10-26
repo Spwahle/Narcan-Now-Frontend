@@ -1,5 +1,5 @@
 {
-  "name": "Narcan-Now",
+  "name": "36-d18",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,18 +10,6 @@
     "test:watch": "jest --watchAll",
     "heroku-postbuild": "webpack -p --progress"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Spwahle/Narcan-Now.git",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/Spwahle/Narcan-Now/issues"
-    },
-    "homepage": "https://github.com/Spwahle/Narcan-Now#readme",
-
-
   "jest": {
     "globals": {
       "__DEBUG__": false,
@@ -33,6 +21,9 @@
     "collectCoverage": true,
     "coverageDirectory": "./coverage"
   },
+  "keywords": [],
+  "author": "Code Fellows, LLC",
+  "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -53,6 +44,7 @@
     "react-dom": "^15.6.1",
     "react-google-maps": "^9.0.2",
     "react-redux": "^5.0.6",
+    "react-responsive": "^3.0.0",
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^15.6.1",
     "redux": "^3.7.2",
@@ -66,5 +58,4 @@
   "devDependencies": {
     "webpack-dev-server": "^2.8.2"
   }
-}
 }

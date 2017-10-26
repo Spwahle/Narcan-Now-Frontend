@@ -1,6 +1,8 @@
 import './_app.scss';
 import React from 'react';
 import Navbar from '../navbar';
+import MediaQuery from 'react-responsive';
+
 import {connect} from 'react-redux';
 import * as utils from '../../lib/utils';
 import {tokenSet} from '../../action/auth-actions';
@@ -26,23 +28,26 @@ class App extends React.Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div className="application">
-          <div className='narcan'>
-
-            <AppBar title="Narcan Now!"/>
-            <h1>hi im the app</h1>
-            <BrowserRouter>
-              <div>
-                <Navbar />
-                <Route path="/welcome/:auth" component={LandingContainer}/>
-                <Route exact path="/settings" component={() => this.props.auth ? <SettingsContainer/> : <Redirect to="/" />}/>
-                <Route exact path='/learn-narcan' component={() => this.props.auth ? <AboutContainer/> : <Redirect to ="/" />}/>
-                <Route exact path='/give-narcan' component={() => this.props.auth ? <DirectionsContainer/> : <Redirect to ="/" />}/>
-                <Route exact path="/" component={() => this.props.auth ? <DashboardContainer/> : <Redirect to="/" />}/>
+        <MediaQuery query="(min-device-width: 1224px)">
+          <div className="application">
+            <div className='narcan'>
+              <div className='login-image'>
+                <AppBar title="Narcan Now!"/>
+                <h1>hi im the app</h1>
+                <BrowserRouter>
+                  <div>
+                    <Navbar />
+                    <Route path="/welcome/:auth" component={LandingContainer}/>
+                    <Route exact path="/settings" component={() => this.props.auth ? <SettingsContainer/> : <Redirect to="/" />}/>
+                    <Route exact path='/learn-narcan' component={() => this.props.auth ? <AboutContainer/> : <Redirect to ="/" />}/>
+                    <Route exact path='/give-narcan' component={() => this.props.auth ? <DirectionsContainer/> : <Redirect to ="/" />}/>
+                    <Route exact path="/" component={() => this.props.auth ? <DashboardContainer/> : <Redirect to="/" />}/>
+                  </div>
+                </BrowserRouter>
               </div>
-            </BrowserRouter>
+            </div>
           </div>
-        </div>
+        </MediaQuery>
       </MuiThemeProvider>
 
     );
