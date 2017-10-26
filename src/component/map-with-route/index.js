@@ -51,7 +51,7 @@ const MapWithAMarkerClustererAndDirectionsRenderer = compose(
           key={marker._id}
           position={{ lat: marker.lat, lng: marker.lng }}
           icon={{
-            url: 'fire-pin.svg',
+            url: 'http://christensenheating.com/wp-content/uploads/2015/08/Appleton-WI-Furnace-Service-and-Repair-Christensen-Heating-and-Cooling.png',
           }}
         />
       ))}
@@ -72,7 +72,7 @@ class MapWithRoute extends React.PureComponent {
 
   componentDidMount() {
     console.log('__map-with-route_PROPS__', this.props);
-    const url = ['https://gist.githubusercontent.com/ratiphi/596fe4d088b6e2ce48087eb10e9b9ab1/raw/6feca2a9b806a85528c1eeb2c92a20468ff32f83/data.json'];
+    const url = ['https://gist.githubusercontent.com/ratiphi/596fe4d088b6e2ce48087eb10e9b9ab1/raw/50eea75be191bd62a8370b49611341ef5a96145c/data.json'];
 
     fetch(url)
       .then(res => res.json())
