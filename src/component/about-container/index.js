@@ -2,7 +2,7 @@ import React from 'react';
 import * as utils from '../../lib/utils';
 import {connect} from 'react-redux';
 
-class FactList extends React.Component {
+class AboutContainer extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -32,4 +32,4 @@ let mapDispatchToProps = dispatch => ({
 
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FactList);
+export default connect(mapStateToProps, mapDispatchToProps)(AboutContainer);

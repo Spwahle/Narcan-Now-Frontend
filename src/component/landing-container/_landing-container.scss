@@ -1,6 +1,45 @@
 @import '../../style/lib/vars';
 
-.login-image {
-  padding: $gutter-sm;
+
+.landing-container {
+  height: 100%;
   background: url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iii19fmwoBMg/v0/1200x675.jpg') #666 no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title {
+  font-family: $font-logo;
+  color: $white;
+  font-size: 11vw;
+  text-align: center;
+  margin-left: 3vw;
+  margin-top: 1vw;
+  display: inline-block;
+  user-select: none;
+  cursor: default;
+}
+
+#title-container {
+  text-align: center;
+  padding: $gutter-lg * 4.5 0 $gutter-lg * 3 0;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 12vw;
+  width: 12vw;
+  display: inline-block;
+  fill: $white;
+}
+
+.hidden {
+  display: none;
 }

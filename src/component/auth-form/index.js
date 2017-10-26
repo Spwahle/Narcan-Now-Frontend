@@ -85,7 +85,17 @@ class AuthForm extends React.Component {
           value={this.state.password}
           onChange={this.handleChange}/>
 
-        <RaisedButton label={this.props.auth} type="submit" primary={true} />
+        <RaisedButton className='sign-up-button' label={this.props.auth} type="submit" primary={true} />
+
+        {utils.renderIf(this.props.auth === 'login',
+          <button className='sign-up-button' onClick={this.redirectToSignup}>New user? Sign up here.</button>
+        )}
+
+        {utils.renderIf(this.props.auth === 'signup',
+          <button className='sign-up-button' onClick={this.redirectToLogin}>Returning user? Log in here.</button>
+        )}
+        <div className='separator'></div>
+
       </form>
     );
   }
