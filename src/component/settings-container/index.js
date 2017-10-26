@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as utils from '../../lib/utils';
 import ProfileForm from '../profile-form';
-import {profileFetchRequest, profileCreateRequest} from '../../action/profile-actions';
+// import {profileFetchRequest, profileCreateRequest} from '../../action/profile-actions';
 
 class SettingsContainer extends React.Component {
   componentWillMount() {

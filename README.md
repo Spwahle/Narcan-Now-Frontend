@@ -62,6 +62,15 @@ So we created this mobile first web application to help with that problem.
  * **webpack** : Is a module bundler thats purpose is to bundle Javascript files for usage in a browser.
  https://www.npmjs.com/package/webpack.
 
+###Upcoming Features
+
+We have such high hopes for this app's future! We've talk exstensively about what we'd like to do going forward and here are some of the features we'd like to implement.
+
+* Text notification
+* Crowdsourced option to add narcan supply spots
+* Notify 911 immediately
+* Step by Step Guide on how to administer narcan
+
 
 
 ### Meet the Team:

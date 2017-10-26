@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import * as utils from '../../lib/utils';
 import PhotoForm from '../photo-form';
 import PhotoItem from '../photo-item';
-import {profileFetchRequest} from '../../action/profile-actions';
+// import {profileFetchRequest} from '../../action/profile-actions';
 import {photoCreateRequest, photosFetchRequest} from '../../action/photo-actions';
 
 class DashboardContainer extends React.Component {
