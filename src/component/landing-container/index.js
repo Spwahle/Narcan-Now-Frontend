@@ -16,11 +16,13 @@ class LandingContainer extends React.Component {
 
     return (
       <div>
-        <div className="login-image">
+        <div className="landing-container">
+          <div className="hero-image">
           <AuthForm
             auth={params.auth}
             redirect={redirect}
             onComplete={handleComplete}/>
+            </div>
         </div>
       </div>
     );
