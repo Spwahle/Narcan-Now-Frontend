@@ -1,9 +1,10 @@
 @import '../../style/lib/vars';
 
 .about-container {
-  padding: $gutter-sm;
 
-  li {
-    margin: $gutter-sm;
-  }
+
+}
+
+& div {
+    column-count: 3;
 }

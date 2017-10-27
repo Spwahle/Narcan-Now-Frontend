@@ -21,9 +21,11 @@
 We found the following challenge on [![challenge.gov](https://www.challenge.gov/challenge/the-2016-fda-naloxone-app-competition/)], the hub for listing challenge and prize competitions, all of which are run by more than 100 agencies across federal government. These problem-solving events include idea, creative, technical and scientific competitions in which U.S. federal agencies invite the public’s help to solve perplexing mission-centric problems.
 
 #### Our challenge description:
-Design an App that helps solve the problem we face when getting Naloxone to the people who need it, people who need the antidote to reverse a drug overdose.
+We want to apply a crowdsourced community solution to helping people get Narcan when they need it. By the time we are finished with this presentation, someone will have died from a drug overdose from such drugs as oxycontin, heroin or fentanyl. That’s the reality today. In 2015 the US had over 33,000 people die from Opioid overdose according to the CDC. Half of these from prescription painkillers. In 2016, more Americans died from overdose than in the Vietnam War. It’s an epidemic and was just declare a public health emergency as early as yesterday. It’s not easy to talk about this, as many of us are affected personally myself included.
 
-So we created this mobile first web application to help with that problem.
+However, there is an effective way to bring someone back from the brink. It’s called Narcan and it’s an opioid antagonist. Narcan can be administered through a small nasal inhaler by virtually anyone. It works by binding itself to the body’s opioid receptors in the brain. The compound has more affinity to these receptors than the opioids do. Thus blocking the drug from being absorbed in further and effectively reversing the OD symptoms such as respiratory failure.  Our hope is to provide people who want to help with multiple resources for them to turn to when they recognize that someone is having an overdose.
+
+Our app Narcan Now is a clean, simple interface that utilizes React for rendering live updates and Google Maps API for up to date location data. The idea and focus of our app really focuses on two goals. One is showing the locations of Narcan and providing an interface for a person who wants to help someone who is in the middle of OD. Though it should be noted that no matter how close a potential source can be one should always call 911 first.
 
 #### Tools we used:
 

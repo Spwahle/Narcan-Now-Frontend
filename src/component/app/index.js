@@ -33,7 +33,6 @@ class App extends React.Component {
             <div className='narcan'>
               <div className='login-image'>
                 <AppBar title="Narcan Now!"/>
-                <h1>hi im the app</h1>
                 <BrowserRouter>
                   <div>
                     <Navbar />
