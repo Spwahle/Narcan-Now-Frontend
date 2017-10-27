@@ -10,7 +10,7 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 ### Project:
-We found the following challenge on [![challenge.gov](https://www.challenge.gov/challenge/the-2016-fda-naloxone-app-competition/)], the hub for listing challenge and prize competitions, all of which are run by more than 100 agencies across federal government. These problem-solving events include idea, creative, technical and scientific competitions in which U.S. federal agencies invite the public’s help to solve perplexing mission-centric problems.
+We found the following challenge on challenge.gov, the hub for listing challenge and prize competitions, all of which are run by more than 100 agencies across federal government. These problem-solving events include idea, creative, technical and scientific competitions in which U.S. federal agencies invite the public’s help to solve perplexing mission-centric problems.
 
 #### Our challenge description:
 We want to apply a crowdsourced community solution to help people get Narcan when they need it. By the time we are finished with this presentation, someone will have died from a drug overdose from such drugs as oxycontin, heroin or fentanyl. That’s the reality today. In 2015 the US had over 33,000 people die from Opioid overdoses according to the CDC. Half of these from prescription painkillers. In 2016, more Americans died from an overdose than in the Vietnam War. It is an epidemic and was just declared a public health emergency as early as yesterday. It is not easy to talk about this, as many of us are affected personally, myself included.
