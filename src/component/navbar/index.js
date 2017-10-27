@@ -33,7 +33,7 @@ class Navbar extends React.Component {
             }
           </ul>
         </nav>
-      </header >
+      </header>
     );
   }
 }
