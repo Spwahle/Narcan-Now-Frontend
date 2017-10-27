@@ -1,8 +1,7 @@
 import './_app.scss';
 import React from 'react';
 import Navbar from '../navbar';
-import MediaQuery from 'react-responsive';
-
+//import MediaQuery from 'react-responsive';
 import {connect} from 'react-redux';
 import * as utils from '../../lib/utils';
 import {tokenSet} from '../../action/auth-actions';
@@ -68,11 +67,10 @@ class App extends React.Component {
                 <Route exact path='/learn-narcan' component={() => this.props.auth ? <AboutContainer/> : <Redirect to ="/" />}/>
                 <Route exact path='/give-narcan' component={() => this.props.auth ? <DirectionsContainer/> : <Redirect to ="/" />}/>
                 <Route exact path="/" component={() => this.props.auth ? <DashboardContainer/> : <Redirect to="/" />}/>
-
               </div>
-            </div>
+            </BrowserRouter>
           </div>
-        </MediaQuery>
+        </div>
       </MuiThemeProvider>
 
     );
