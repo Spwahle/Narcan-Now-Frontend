@@ -59,7 +59,6 @@ class DashboardContainer extends React.Component {
     return (
       <div className='dashboard-container'>
         <div className='host-content'>
-          <h1>hi im the dashboard</h1>
           <h2>Narcan Now! Click button to trigger Narcan alert!</h2>
           <ConfirmButton
             label="Narcan Needed!"

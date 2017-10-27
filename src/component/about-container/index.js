@@ -2,7 +2,7 @@ import React from 'react';
 import * as utils from '../../lib/utils';
 import {connect} from 'react-redux';
 
-class FactList extends React.Component {
+class AboutContainer extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ class FactList extends React.Component {
     return (
       <div className="about-container">
         <ul>
-          <li> 1. Opioid drugs can slow or stop a person’s breathing, leading to death. Opioids include illegal drugs like heroin, but also prescription medications such as morphine, codeine and hydrocodone, which doctors often prescribe to treat pain. Anyone who uses opioids for long-term management of cancer or non-cancer pain is also at risk for opioid overdose, not just those who use street drugs like heroin.</li>
+          <li> <p>1. Opioid drugs can slow or stop a person’s breathing, leading to death.<br /> Opioids include illegal drugs like heroin, but also prescription medications such as morphine, <br />codeine and hydrocodone, which doctors often prescribe to treat pain.</p> Anyone who uses opioids for long-term management of cancer or non-cancer pain is also at risk for opioid overdose, not just those who use street drugs like heroin.</li>
           <li> 2. You can now purchase the opiate overdose antidote drug naloxone, which restores breathing, at California pharmacies without a prescription. Emergency room doctors and first responders have used naloxone for years to restore breathing in someone who has overdosed on an opiate. </li>
           <li> 3. Nonmedical personnel, family members and close friends of those at risk of overdose may safely administer naloxone in a life-threatening emergency. However, an individual who is experiencing opioid overdose requires immediate medical attention, so a critical first step is to call 911  for medical assistance. The administration of naloxone can buy critical time while waiting for emergency services to arrive.</li>
           <li> 4. Despite what you see in movies like “Pulp Fiction,” you should never inject naloxone directly into the heart of someone who is overdosing. Rather, you should administer it as a nasal spray or an injection into the upper arm or thigh muscle.</li>
@@ -32,4 +32,4 @@ let mapDispatchToProps = dispatch => ({
 
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FactList);
+export default connect(mapStateToProps, mapDispatchToProps)(AboutContainer);
