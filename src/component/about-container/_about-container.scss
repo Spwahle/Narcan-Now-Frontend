@@ -2,9 +2,21 @@
 
 .about-container {
 
+  & div {
+      column-count: 1;
+      color: white;
+      font-size: 13;
+  }
 
 }
 
-& div {
-    column-count: 3;
-}
+// .left {
+//   text-align: left;
+//   float: left;
+// }
+//
+// .right {
+//     text-align: right;
+//     float: right;
+//
+// }
