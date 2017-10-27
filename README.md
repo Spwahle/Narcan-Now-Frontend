@@ -2,14 +2,14 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/arn1313/kritter-frontend/master/LICENSE) ![Build Passing](https://img.shields.io/badge/build-passing-green.svg)
 
 ## Table of Contents:
-1. [About Narcan-Now](#Project description)
-2. [Tools we used](#Tools we used)
-3. [Meet the Team](#Meet the Team)
+1. [Project](#Project)
+2. [Tools](#Tools)
+3. [Team](#Team)
 4. [Resources](#Resources)
 
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-### Project description:
+### Project:
 We found the following challenge on [![challenge.gov](https://www.challenge.gov/challenge/the-2016-fda-naloxone-app-competition/)], the hub for listing challenge and prize competitions, all of which are run by more than 100 agencies across federal government. These problem-solving events include idea, creative, technical and scientific competitions in which U.S. federal agencies invite the public’s help to solve perplexing mission-centric problems.
 
 #### Our challenge description:
@@ -25,7 +25,7 @@ Our app Narcan Now is a clean, simple interface that utilizes React for renderin
 ![NarcanImage](src/assets/Narcan-nasal-spray-proper-use.jpg)
 
 
-#### Tools we used:
+#### Tools:
  * **Google Maps API**: A wonderfully written and simple to use API that allows us to work with google maps.
  https://developers.google.com/maps/documentation/javascript/
 
@@ -62,7 +62,7 @@ Our app Narcan Now is a clean, simple interface that utilizes React for renderin
  https://www.npmjs.com/package/webpack.
 
 
-### Meet the Team:
+### Team:
 * Shaun Wahle
 
 
