@@ -17,7 +17,6 @@ class LandingContainer extends React.Component {
     return (
       <div>
         <div className="login-image">
-          <h2>Hello from the landing page!</h2>
           <AuthForm
             auth={params.auth}
             redirect={redirect}

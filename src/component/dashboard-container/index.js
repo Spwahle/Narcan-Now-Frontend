@@ -58,7 +58,7 @@ class DashboardContainer extends React.Component {
   render() {
     return (
       <div className='dashboard-container'>
-          <h1>hi im the dashboard</h1>
+        <div className='host-content'>
           <h2>Narcan Now! Click button to trigger Narcan alert!</h2>
           <ConfirmButton
             label="Narcan Needed!"
@@ -74,6 +74,7 @@ class DashboardContainer extends React.Component {
             <MapWithMarkers />
           )}
         </div>
+      </div>
     );
   }
 }
