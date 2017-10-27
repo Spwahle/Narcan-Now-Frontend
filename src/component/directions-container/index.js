@@ -1,3 +1,4 @@
+import './_directions-container.scss';
 import React from 'react';
 import * as utils from '../../lib/utils';
 import {connect} from 'react-redux';
