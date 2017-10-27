@@ -3,7 +3,7 @@
 
 body {
   font-family: $font-primary;
-  background: $dark-gray;
+  background: $light-gray;
 }
 
 main {
@@ -110,19 +110,22 @@ input[type="email"] {
 
 
 h1 {
-  font-size: 3vw;
-  text-decoration: underline;
-  margin-bottom: $gutter-sm;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  // margin-bottom: $gutter-sm;
 }
 
 h2 {
+  margin-top:  $gutter-sm;
+  color: black;
   font-size: 2vw;
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: $gutter-sm;
 }
 
 h3 {
   font-size: 1vw;
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: $gutter-sm;
 }
