@@ -18,13 +18,14 @@ class LandingContainer extends React.Component {
       <div>
         <div className="landing-container">
           <div className="hero-image">
-          <AuthForm
-            auth={params.auth}
-            redirect={redirect}
-            onComplete={handleComplete}/>
-            </div>
+            <AuthForm
+              auth={params.auth}
+              redirect={redirect}
+              onComplete={handleComplete}/>
+          </div>
         </div>
       </div>
+
     );
   }
 }
