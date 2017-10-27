@@ -4,7 +4,6 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-map
 import MarkerClusterer from 'react-google-maps/lib/components/addons/MarkerClusterer';
 import { compose, withProps } from 'recompose';
 import fetch from 'isomorphic-fetch';
-const narcanLocation = JSON.parse('{"_id": "1234567890","name": "Business Name","address": "Street Address","coordinates": "lat: 47.606, lng: -122.332"}');
 
 const MapWithAMarkerClusterer = compose(
   withProps({
