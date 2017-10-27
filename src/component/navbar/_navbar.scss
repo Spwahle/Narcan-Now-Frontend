@@ -1,5 +1,21 @@
 @import '../../style/lib/vars';
 
+.profile-header {
+  display: flex;
+  justify-content: flex-end;
+
+  h2 {
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  img {
+    width: 3%;
+    height: 3%;
+    border: 1px solid grey;
+  }
+}
+
 nav {
   z-index: 2;
   font-size: 5vw;

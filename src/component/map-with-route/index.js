@@ -9,7 +9,7 @@ const MapWithAMarkerClustererAndDirectionsRenderer = compose(
   withProps({
     googleMapURL: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDOTFGuAM5KLro5-_3oNBKzpKYLhcVXZxg&v=3.exp&libraries=geometry,drawing,places',
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `800px` }} />,
+    containerElement: <div style={{ height: `800px`, margin: '10px 0 0 0' }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,

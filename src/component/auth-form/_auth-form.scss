@@ -43,18 +43,18 @@
     background: linear-gradient(to right, transparent 0, rgba(255,255,255,0.2) 10%, rgba(255,255,255,0.2) 90%, transparent 100%);
   }
 
-  & .sign-up-button {
-    background-color: transparent;
-    text-shadow: none;
-    font-size: 4vw;
-    padding: 0 0 0;
-    margin-bottom: 0;
-    text-transform: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  // & .sign-up-button {
+  //   background-color: transparent;
+  //   text-shadow: none;
+  //   font-size: 4vw;
+  //   padding: 0 0 0;
+  //   margin-bottom: 0;
+  //   text-transform: none;
+  //
+  //   &:hover {
+  //     text-decoration: underline;
+  //   }
+  // }
 
   & .start-button:hover {
     background-color: $color-secondary;
