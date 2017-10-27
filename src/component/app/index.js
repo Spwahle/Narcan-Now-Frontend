@@ -12,12 +12,29 @@ import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 import SettingsContainer from '../settings-container';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import darkBaseTheme from 'material-ui//styles/baseThemes/darkBaseTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import AppBar from 'material-ui/AppBar';
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
+import {Link} from 'react-router-dom';
 
-const muiTheme = getMuiTheme(darkBaseTheme);
+const muiTheme = getMuiTheme(lightBaseTheme);
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {open: false};
+  }
+
+  handleClose() {
+    this.setState({open: false});
+  }
+
+  handleToggle() {
+    this.setState({open: !this.state.open});
+  }
+
   componentDidMount() {
     let token = utils.cookieFetch('X-Sluggram-Token');
     if (token) this.props.tokenSet(token);
@@ -28,9 +45,19 @@ class App extends React.Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className="application">
           <div className='narcan'>
-
-            <AppBar title="Narcan Now!"/>
-            <h1>hi im the app</h1>
+            <AppBar
+              title="Narcan Now!"
+              onLeftIconButtonTouchTap = { this.handleToggle.bind(this) }
+            />
+            <Drawer
+              docked={false}
+              width={200}
+              open={this.state.open}
+              onRequestChange={(open) => this.setState({open})}
+            >
+              <MenuItem onClick={ this.handleClose.bind(this) }>Menu Item 1</MenuItem>
+              <MenuItem onClick={ this.handleClose.bind(this) }>Menu Item 2</MenuItem>
+            </Drawer>
             <BrowserRouter>
               <div>
                 <Navbar />
