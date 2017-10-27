@@ -2,10 +2,10 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/arn1313/kritter-frontend/master/LICENSE) ![Build Passing](https://img.shields.io/badge/build-passing-green.svg)
 
 ## Table of Contents:
-1. [Project](#Project)
-2. [Tools](#Tools)
-3. [Team](#Team)
-4. [Resources](#Resources)
++ [Project](#Project)
++ [Tools](#Tools)
++ [Team](#Team)
++ [Resources](#Resources)
 
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
