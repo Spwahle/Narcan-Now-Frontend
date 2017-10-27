@@ -28,6 +28,9 @@ const MapWithAMarkerClusterer = compose(
         <Marker
           key={marker._id}
           position={{ lat: marker.lat, lng: marker.lng }}
+          icon={{
+            url: marker.icon,
+          }}
         />
       ))}
     </MarkerClusterer>
@@ -40,7 +43,7 @@ class MapWithMarkers extends React.PureComponent {
   }
 
   componentDidMount() {
-    const url = ['https://gist.githubusercontent.com/ratiphi/596fe4d088b6e2ce48087eb10e9b9ab1/raw/6feca2a9b806a85528c1eeb2c92a20468ff32f83/data.json'];
+    const url = ['https://gist.githubusercontent.com/ratiphi/596fe4d088b6e2ce48087eb10e9b9ab1/raw/584b7d01d0b4e116fa22430cc752a31d9db16554/data.json'];
 
     fetch(url)
       .then(res => res.json())
