@@ -43,7 +43,7 @@ class ProfileForm extends React.Component {
           type="file"
           name="avatar"
           onChange={this.handleChange}/>
-
+        <br></br>
         <textarea
           name="bio"
           cols="30"

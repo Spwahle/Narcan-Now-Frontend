@@ -63,8 +63,8 @@ class Navbar extends React.Component {
 
         {this.props.auth && this.props.profile ?
           <div className="profile-header">
-            <h2>Welcome { this.props.profile.username }</h2>
-            <img src={ this.props.profile.avatar } style={{width: '10%', border: '1px solid grey'}}/>
+            <h2>logged in: { this.props.profile.username }</h2>
+            <img src={ this.props.profile.avatar }/>
           </div>
           :
           undefined

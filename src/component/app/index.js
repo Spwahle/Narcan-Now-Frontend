@@ -15,8 +15,22 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+import * as Colors from 'material-ui/styles/colors';
+import { fade } from 'material-ui/utils/colorManipulator';
 
-const muiTheme = getMuiTheme(darkBaseTheme);
+const getTheme = () => {
+  let overwrites = {
+    'palette': {
+      'accent1Color': '#ef9a9a',
+    },
+    'drawer': {
+      'color': '#bdbdbd',
+    },
+  };
+  return getMuiTheme(darkBaseTheme, overwrites);
+};
+
+const muiTheme = getTheme();
 
 class App extends React.Component {
   componentDidMount() {
