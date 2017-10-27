@@ -7,3 +7,16 @@
     margin: $gutter-sm;
   }
 }
+
+
+  & div {
+      column-count: 1;
+      color: white;
+      font-size: 1vw;
+  }
+
+  p {
+    font-size: 1vw
+  }
+
+}
