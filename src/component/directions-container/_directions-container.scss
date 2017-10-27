@@ -2,21 +2,6 @@
 
 .directions-container {
   padding: $gutter-sm;
-
-  h1 {
-    margin: $gutter-sm;
-  }
-}
-
-
-  & div {
-      column-count: 1;
-      color: white;
-      font-size: 1vw;
-  }
-
-  p {
-    font-size: 1vw
-  }
-
+  margin-left: 20px;
+  margin-right: 20px;
 }
