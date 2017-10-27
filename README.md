@@ -2,7 +2,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/arn1313/kritter-frontend/master/LICENSE) ![Build Passing](https://img.shields.io/badge/build-passing-green.svg)
 
 ## Table of Contents:
-1. [About Narcan-Now](#Project description:)
+1. [About Narcan-Now](#Project description)
 2. [Tools we used](#Tools we used)
 3. [Meet the Team](#Meet the Team)
 4. [Resources](#Resources)
