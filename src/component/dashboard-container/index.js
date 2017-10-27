@@ -2,8 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import './_dashboard-container.scss';
 import * as utils from '../../lib/utils';
-import PhotoForm from '../photo-form';
-import PhotoItem from '../photo-item';
 import {profileFetchRequest} from '../../action/profile-actions';
 import {photoCreateRequest, photosFetchRequest} from '../../action/photo-actions';
 import MapWithRoute from '../map-with-route';
