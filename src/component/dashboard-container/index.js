@@ -29,7 +29,6 @@ class DashboardContainer extends React.Component {
   }
 
   componentWillMount() {
-    if(!this.props.photos.length) this.props.photosFetch();
     if (!this.props.profile) this.props.profileFetch();
   }
 

@@ -7,6 +7,7 @@ import {tokenSet} from '../../action/auth-actions';
 import LandingContainer from '../landing-container';
 import DashboardContainer from '../dashboard-container';
 import DirectionsContainer from '../directions-container';
+import HomePage from '../homepage';
 import AboutContainer from '../about-container';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 import SettingsContainer from '../settings-container';
@@ -36,6 +37,7 @@ class App extends React.Component {
                 <Route exact path='/learn-narcan' component={() => this.props.auth ? <AboutContainer/> : <Redirect to ="/" />}/>
                 <Route exact path='/give-narcan' component={() => this.props.auth ? <DirectionsContainer/> : <Redirect to ="/" />}/>
                 <Route exact path="/" component={() => this.props.auth ? <DashboardContainer/> : <Redirect to="/" />}/>
+                <Route exact path="/" component={() => !this.props.auth ? <HomePage/> : <Redirect to="/" />}/>
               </div>
             </BrowserRouter>
           </div>
