@@ -2,12 +2,10 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/arn1313/kritter-frontend/master/LICENSE) ![Build Passing](https://img.shields.io/badge/build-passing-green.svg)
 
 ## Table of Contents:
-1. [About The Narcan-Now](#Project description:)
+1. [About Narcan-Now](#Project description:)
 2. [Tools we used](#Tools we used)
 3. [Meet the Team](#Meet the Team)
-4. [Credits And Thanks]
-5. [Future]
-
+4. [Resources](#Resources)
 
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
@@ -66,17 +64,31 @@ Our app Narcan Now is a clean, simple interface that utilizes React for renderin
 
 ### Meet the Team:
 * Shaun Wahle
-[![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/shaun-wahle/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/Spwahle)
+
+
 Shaun is finishing Full-Stack Javascript Certificate at the Code Fellows Dev Bootcamp. He is currently working on supplementing his education through free-lance work and self-study. Web services and development are two of his passions, meaning he can work on anything from the back end of a web solution (NodeJS) to the front end (HTML, CSS, Javascript). When not coding, he can be found enjoying his homemade churros, traveling, motorcyling, or giving wine tasting classes.
 
+[![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/shaun-wahle/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/Spwahle)
+
 * Madeline Stevens
-Madeline grew up in Seattle. She moved to Dallas, Texas for a journalism internship and ended up staying there for four years. After gaining skills in storytelling, photojournalism and videography she applied to work at Apple retail the day after Steve Jobs passed. She started working as a technician but soon became a trainer, working with other people and their creative projects, facilitating workshops and kids field trips. Now that she is back home she wants to help improve software for people with accessibility needs and continue to expose more kids to coding.
+
+Madeline grew up in Seattle. She moved to Dallas, Texas for a journalism internship and ended up staying there for four years. After gaining skills in storytelling, photojournalism and videography she applied to work at Apple retail the day after Steve Jobs passed. She started working as a technician but soon became a trainer, working with other people and their creative projects, facilitating workshops and kids field trips. Now that she is back home she wants to help improve software for people with accessibility needs and has plans to continue exposing more kids to coding after graduation at a school in West Seattle.
+
 [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/madelinerosestevens/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/madhubs)
 
 * Tim Turner
+
 Tim is a software developer in training with a background in Information Technology and weather forecasting. He enjoys the outdoors, playing with his dog, and spending time with his fiancée.
+
  [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/timothyt/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/ratiphi)
 
 
+### Resources:
+#### APIs
+* https://developers.google.com/maps/
+* https://www.twilio.com
+* https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
 
-### Resources
+#### Narcan information
+* https://www.narcan.com/pdf/NARCAN-Quick-Start-Guide.pdf
+* http://www.npr.org/sections/thetwo-way/2017/10/26/560180901/walgreens-stocks-narcan-opioid-overdose-spray-in-all-pharmacies
