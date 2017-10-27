@@ -1,6 +1,9 @@
+@import 'src/style/lib/_vars.scss';
+
+
 body {
   font-family: $font-primary;
-  // background: $secondary;
+  background: $color-secondary
 }
 
 main {
@@ -104,6 +107,7 @@ input[type="email"] {
     color: $white;
   }
 }
+
 
 h1 {
   font-size: 3vw;
