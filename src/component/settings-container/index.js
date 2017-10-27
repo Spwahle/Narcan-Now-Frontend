@@ -15,14 +15,26 @@ class SettingsContainer extends React.Component {
   render() {
     return (
       <div className="settings-container">
-        {utils.renderIf(this.props.auth && !this.props.profile,
+        {this.props.auth && !this.props.profile ?
           <div className="profile-form-container">
             <h2>Create your profile!</h2>
             <ProfileForm
               buttonText="create"
               onComplete={this.props.profileCreate}/>
           </div>
-        )}
+          :
+          undefined
+        }
+
+        {this.props.auth && this.props.profile ?
+          <div className="profile-container">
+            <h2>Username: { this.props.profile.username }</h2>
+            <img src={ this.props.profile.avatar } style={{width: '10%', border: '1px solid grey'}}/>
+            <h2>Bio: { this.props.profile.bio }</h2>
+          </div>
+          :
+          undefined
+        }
       </div>
     );
   }
