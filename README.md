@@ -2,17 +2,15 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/arn1313/kritter-frontend/master/LICENSE) ![Build Passing](https://img.shields.io/badge/build-passing-green.svg)
 
 ## Table of Contents:
-1. [About The Narcan-Now](#Project description:)
-2. [Tools we used](#Tools we used)
-3. [Meet the Team](#Meet the Team)
-4. [Credits And Thanks]
-5. [Future]
-
++ [Project](#Project)
++ [Tools](#Tools)
++ [Team](#Team)
++ [Resources](#Resources)
 
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-### Project description:
-We found the following challenge on [![challenge.gov](https://www.challenge.gov/challenge/the-2016-fda-naloxone-app-competition/)], the hub for listing challenge and prize competitions, all of which are run by more than 100 agencies across federal government. These problem-solving events include idea, creative, technical and scientific competitions in which U.S. federal agencies invite the public’s help to solve perplexing mission-centric problems.
+### Project:
+We found the following challenge on challenge.gov, the hub for listing challenge and prize competitions, all of which are run by more than 100 agencies across federal government. These problem-solving events include idea, creative, technical and scientific competitions in which U.S. federal agencies invite the public’s help to solve perplexing mission-centric problems.
 
 #### Our challenge description:
 We want to apply a crowdsourced community solution to help people get Narcan when they need it. By the time we are finished with this presentation, someone will have died from a drug overdose from such drugs as oxycontin, heroin or fentanyl. That’s the reality today. In 2015 the US had over 33,000 people die from Opioid overdoses according to the CDC. Half of these from prescription painkillers. In 2016, more Americans died from an overdose than in the Vietnam War. It is an epidemic and was just declared a public health emergency as early as yesterday. It is not easy to talk about this, as many of us are affected personally, myself included.
@@ -27,7 +25,7 @@ Our app Narcan Now is a clean, simple interface that utilizes React for renderin
 ![NarcanImage](src/assets/Narcan-nasal-spray-proper-use.jpg)
 
 
-#### Tools we used:
+#### Tools:
  * **Google Maps API**: A wonderfully written and simple to use API that allows us to work with google maps.
  https://developers.google.com/maps/documentation/javascript/
 
@@ -64,19 +62,33 @@ Our app Narcan Now is a clean, simple interface that utilizes React for renderin
  https://www.npmjs.com/package/webpack.
 
 
-### Meet the Team:
+### Team:
 * Shaun Wahle
-[![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/shaun-wahle/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/Spwahle)
+
+
 Shaun is finishing Full-Stack Javascript Certificate at the Code Fellows Dev Bootcamp. He is currently working on supplementing his education through free-lance work and self-study. Web services and development are two of his passions, meaning he can work on anything from the back end of a web solution (NodeJS) to the front end (HTML, CSS, Javascript). When not coding, he can be found enjoying his homemade churros, traveling, motorcyling, or giving wine tasting classes.
 
+[![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/shaun-wahle/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/Spwahle)
+
 * Madeline Stevens
-Madeline grew up in Seattle. She moved to Dallas, Texas for a journalism internship and ended up staying there for four years. After gaining skills in storytelling, photojournalism and videography she applied to work at Apple retail the day after Steve Jobs passed. She started working as a technician but soon became a trainer, working with other people and their creative projects, facilitating workshops and kids field trips. Now that she is back home she wants to help improve software for people with accessibility needs and continue to expose more kids to coding.
+
+Madeline grew up in Seattle. She moved to Dallas, Texas for a journalism internship and ended up staying there for four years. After gaining skills in storytelling, photojournalism and videography she applied to work at Apple retail the day after Steve Jobs passed. She started working as a technician but soon became a trainer, working with other people and their creative projects, facilitating workshops and kids field trips. Now that she is back home she wants to help improve software for people with accessibility needs and has plans to continue exposing more kids to coding after graduation at a school in West Seattle.
+
 [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/madelinerosestevens/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/madhubs)
 
 * Tim Turner
+
 Tim is a software developer in training with a background in Information Technology and weather forecasting. He enjoys the outdoors, playing with his dog, and spending time with his fiancée.
+
  [![LinkedInProfile](https://img.shields.io/badge/LinkedIn-Profile-brightgreen.svg)](https://www.linkedin.com/in/timothyt/) [![View My Github](https://img.shields.io/badge/View%20My-Github-blue.svg)](https://github.com/ratiphi)
 
 
+### Resources:
+#### APIs
+* https://developers.google.com/maps/
+* https://www.twilio.com
+* https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
 
-### Resources
+#### Narcan information
+* https://www.narcan.com/pdf/NARCAN-Quick-Start-Guide.pdf
+* http://www.npr.org/sections/thetwo-way/2017/10/26/560180901/walgreens-stocks-narcan-opioid-overdose-spray-in-all-pharmacies

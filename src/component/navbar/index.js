@@ -35,7 +35,7 @@ class Navbar extends React.Component {
     return (
       <header>
         <AppBar
-          title="Narcan Now!"
+          title="NARCAN NOW"
           onLeftIconButtonTouchTap = { this.handleToggle }
         />
         <Drawer
@@ -63,20 +63,20 @@ class Navbar extends React.Component {
 
         {this.props.auth && this.props.profile ?
           <div className="profile-header">
-            <h2>Welcome { this.props.profile.username }</h2>
-            <img src={ this.props.profile.avatar } style={{width: '10%', border: '1px solid grey'}}/>
+            <h2>logged in: { this.props.profile.username }</h2>
+            <img src={ this.props.profile.avatar }/>
           </div>
           :
           undefined
         }
         {this.props.auth && !this.props.profile ?
           <div className="profile-header">
-            <h2>Please go to settings to update your profile!</h2>
+            <h2>Please go to settings to update your profile</h2>
           </div>
           :
           undefined
         }
-      </header >
+      </header>
     );
   }
 }
